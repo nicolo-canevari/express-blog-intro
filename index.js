@@ -12,6 +12,7 @@ app.listen(port, () => {
     
 });
 
+
 // definisco la rotta principale
 app.get('/', (req, res) => {
 
@@ -19,3 +20,37 @@ app.get('/', (req, res) => {
 
 });
 
+
+// creazione dell'array di oggetti
+const posts = [
+    {
+        titolo: 'Ciambellone',
+        contenuto: 'Contenuto del primo post',
+        immagine: '/images/ciambellone.jpeg',
+        tags: ['nodejs', 'express'],
+    },
+    {
+        titolo: 'Cracker Barbabietola',
+        contenuto: 'Contenuto del secondo post',
+        immagine: '/images/cracker_barbabietola.jpeg',
+        tags: ['nodejs', 'express'],
+    },
+    {
+        titolo: 'Pane fritto dolce',
+        contenuto: 'Contenuto del terzo post',
+        immagine: '/images/pane_fritto_dolce.jpeg',
+        tags: ['nodejs', 'express'],
+    },
+    {
+        titolo: 'Pasta barbabietola',
+        contenuto: 'Contenuto del quarto post',
+        immagine: '/images/pasta_barbabietola.jpeg',
+        tags: ['nodejs', 'express'],
+    },
+    {
+        titolo: 'Torta paesana',
+        contenuto: 'Contenuto del quinto post',
+        immagine: 'torta_paesana.jpeg',
+        tags: ['nodejs', 'express'],
+    }
+];
