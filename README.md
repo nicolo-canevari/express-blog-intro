@@ -14,6 +14,8 @@ Consegna:
 
 6. Testare su postman
 
+-------------------------------------------------------------------------
+
 Logica:
 1. Creo una nuova cartella per il progetto, inizializzo il progetto e installo express e nodemon ( npm run watch ).
 
@@ -25,4 +27,6 @@ Logica:
 
 5. Creo l'array di oggetti.
 
-6. Rotta per /bacheca 
+6. Rotta per /bacheca, restituzione dell'array come risposta in formato json.
+
+7. Configuro gli asset statici per la visualizzazione delle immagini all'interno della cartella del progetto. 
