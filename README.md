@@ -17,4 +17,8 @@ Consegna:
 Logica:
 1. Creo una nuova cartella per il progetto, inizializzo il progetto e installo express e nodemon ( npm run dev ).
 
-2. Aggiungo il file index.js  
+2. Aggiungo il file index.js e la cartella con le immagini.
+
+3. Importo il pacchetto Express all'interno di index.js, creo l'app e definisco la porta.
+
+4. Su index.js definssco la rotta e creo la funzione di ascolto per port.   
