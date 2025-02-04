@@ -15,4 +15,6 @@ Consegna:
 6. Testare su postman
 
 Logica:
-1. Creo una nuova cartella per il progetto, inizializzo il progetto e installo express.
+1. Creo una nuova cartella per il progetto, inizializzo il progetto e installo express e nodemon ( npm run dev ).
+
+2. Aggiungo il file index.js  
