@@ -23,4 +23,6 @@ Logica:
 
 4. Su index.js definisco la rotta e creo la funzione di ascolto per port.   
 
-5. Creo l'array di oggetti 
+5. Creo l'array di oggetti.
+
+6. Rotta per /bacheca 

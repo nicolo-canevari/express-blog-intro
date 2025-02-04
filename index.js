@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 
 // creazione dell'array di oggetti
 const posts = [
+
     {
         titolo: 'Ciambellone',
         contenuto: 'Contenuto del primo post',
@@ -53,4 +54,13 @@ const posts = [
         immagine: 'torta_paesana.jpeg',
         tags: ['nodejs', 'express'],
     }
+    
 ];
+
+// rotta per /bacheca che restituirà l'arrey dei post
+app.get('/bacheca', (req, res) => {
+
+    // risposta in formato json
+    res.json(posts);
+
+});
