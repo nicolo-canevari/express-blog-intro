@@ -29,45 +29,46 @@ app.get('/', (req, res) => {
 
 
 // creazione dell'array di oggetti
+app.get('/posts', (req, res) => {
+
 const posts = [
 
     {
-        // http://localhost:3000/images/ciambellone.jpeg
         titolo: 'Ciambellone',
         contenuto: 'Contenuto del primo post',
-        immagine: '/images/ciambellone.jpeg',
+        immagine: 'http://localhost:3000/images/ciambellone.jpeg',
         tags: ['nodejs', 'express'],
     },
     {
-        // http://localhost:3000/images/cracker_barbabietola.jpeg
         titolo: 'Cracker Barbabietola',
         contenuto: 'Contenuto del secondo post',
-        immagine: '/images/cracker_barbabietola.jpeg',
+        immagine: 'http://localhost:3000/images/cracker_barbabietola.jpeg',
         tags: ['nodejs', 'express'],
     },
-    {
-        // http://localhost:3000/images/pane_fritto_dolce.jpeg
+    { 
         titolo: 'Pane fritto dolce',
         contenuto: 'Contenuto del terzo post',
-        immagine: '/images/pane_fritto_dolce.jpeg',
+        immagine: 'http://localhost:3000/images/pane_fritto_dolce.jpeg',
         tags: ['nodejs', 'express'],
     },
     {
-        // http://localhost:3000/images/pasta_barbabietola.jpeg
         titolo: 'Pasta barbabietola',
         contenuto: 'Contenuto del quarto post',
-        immagine: '/images/pasta_barbabietola.jpeg',
+        immagine: 'http://localhost:3000/images/pasta_barbabietola.jpeg',
         tags: ['nodejs', 'express'],
     },
     {
-        // http://localhost:3000/images/torta_paesana.jpeg
         titolo: 'Torta paesana',
         contenuto: 'Contenuto del quinto post',
-        immagine: '/images/torta_paesana.jpeg',
+        immagine: ' http://localhost:3000/images/torta_paesana.jpeg',
         tags: ['nodejs', 'express'],
     }
-    
+
 ];
+
+res.json(posts);
+
+});
 
 // rotta per /bacheca che restituirà l'arrey dei post
 app.get('/bacheca', (req, res) => {
