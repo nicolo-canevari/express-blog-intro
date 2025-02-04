@@ -3,7 +3,12 @@ const express = require('express');
 // creo l'applicazione Express per configurare il server e le rotte
 const app = express();
 // porta su cui il server ascolterà le richieste HTTP
-const port =3000;
+const port = 3000;
+
+
+// gestine dei file statici della cartella 'public'
+app.use(express.static('public'));
+
 
 // funzione che "ascolta" la porta 3000
 app.listen(port, () => {
@@ -73,5 +78,3 @@ app.get('/bacheca', (req, res) => {
 
 });
 
-// gestine dei file statici della cartella images
-app.use('/images', express.static('images'));
