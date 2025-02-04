@@ -10,14 +10,6 @@ const port = 3000;
 app.use(express.static('public'));
 
 
-// funzione che "ascolta" la porta 3000
-app.listen(port, () => {
-
-    // stampo sul terminale
-    console.log('Server in ascolto sulla porta ${port}')
-    
-});
-
 
 // definisco la rotta principale
 app.get('/', (req, res) => {
@@ -29,7 +21,7 @@ app.get('/', (req, res) => {
 
 
 // creazione dell'array di oggetti
-app.get('/posts', (req, res) => {
+app.get('/bacheca', (req, res) => {
 
 const posts = [
 
@@ -70,12 +62,14 @@ res.json(posts);
 
 });
 
-// rotta per /bacheca che restituirà l'arrey dei post
-app.get('/bacheca', (req, res) => {
+// funzione che "ascolta" la porta 3000
+app.listen(port, () => {
 
-    // http://localhost:3000/bacheca
-    // risposta in formato json
-    res.json(posts);
-
+    // stampo sul terminale
+    console.log('Server in ascolto sulla porta ${port}')
+    
 });
+
+
+
 
